@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-token  : ()process.env.TOKEN
+client.login(process.env.TOKEN);
 client.on('message', message => {
 if(message.content === ".raid"){
 var e = new Discord.RichEmbed()
